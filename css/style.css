@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    padding-top: 30px;
+}
+header, .slid, button, select{
+    background-color: #ffc700;
+}
+.block__nav__left button{
+    border: none;
+    cursor: pointer;
+}
+
+.size{
+    font-size: 1.2pc;
+}
+.block__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.block__nav__left{
+    width: 19%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.block__nav__left a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all .3s;
+}
+.block__nav__left a:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+.block__nav__left .shop{
+    width: 70px;
+    border: 2px solid black;
+    border-radius: 18px;
+    padding: 7px 11px 7px 11px;
+}
+
+.block__nav__left .shop2{
+    padding: 7px 6px 7px 6px;
+}
+
+.block__nav__left button{
+    margin-left: 10px;
+}
+
+.block__nav__right{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.block__nav__right div{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a, p, span{
+    font-size: 12px;
+}
+
+.block__nav__right #country, .cart{
+    border: 2px solid black;
+    border-radius: 18px;
+}
+.block__nav__right a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: all .3s;
+}
+.block__nav__right a:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+.cart{
+    width: 90px;
+    height: 33px;
+}
+.block__nav__right a span{
+    font-size: 15px;  
+}
+.block__nav__right select{
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.block__nav__right select option{
+    background-color: black;
+    color: white;
+    
+}
+
+.block__nav__right .cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    
+}

@@ -1,0 +1,143 @@
+footer{
+    /* margin-top: 12pc; */
+    background-color: rgb(255, 199, 0);
+    /* height: 30pc;*/
+    padding-top: 60px; 
+}
+
+/* .block__footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px 0 50px;
+}
+
+.div__words h3{
+    font-weight: 700;
+    line-height: 1.23;
+    text-transform: uppercase;
+} */
+/*________________________________________________*/
+.container{
+    display: grid;
+    grid-template-areas: 'uno dos tres cuatro'
+                         'uno cinco cinco cuatro';
+}
+.uno{
+    grid-area: uno;
+    display: flex;
+    justify-content: center;
+    padding: 0 50px 0 30px;
+}
+.cuatro{
+    grid-area: cuatro;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+}
+.cinco{
+    grid-area: cinco;
+}
+
+.cuatro button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+.dos h3{
+    font-size: 2rem;
+    font-weight: 700;
+    padding-right: 30px;
+}
+
+.tres ul li{
+    
+    list-style: none;
+    padding-bottom: 18px;
+}
+.tres ul li a{
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    font-size: 15px;
+}
+.cinco span:hover{
+    text-decoration: underline;
+}
+.cinco .t:hover{
+    text-decoration: underline;
+}
+.cinco .i:hover{
+    text-decoration: underline;
+}
+.cinco .y:hover{
+    text-decoration: underline;
+}
+.tres .p:hover{
+    text-decoration: underline;
+}
+.tres .c:hover{
+    text-decoration: underline;
+}
+.cinco ul li{
+    list-style: none;
+    color: black;
+}
+.cinco{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 10px;
+}
+.cinco .footer__ul_redes{
+    display: flex;
+    /* justify-content: space-around; */
+    text-align: end;
+}
+.cinco ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    font-size: 25px;
+    margin-right: 2pc;
+}
+.cinco ul{
+    align-items: center;
+}
+.footer__slid{
+    width: 100vw;
+    padding-bottom: 5px;
+    margin-top: 60px;
+    /* animation: 10s linear infinite; */
+    overflow: hidden;
+}
+.footer__slid .slide{
+    width: 100%;
+    display: flex;
+    animation: scroll 20s linear infinite;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.footer__slid .slide span{
+    font-weight: 700;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* padding-right: 10px;
+    margin-left: 10px; */
+}
+
+.footer__slid .slide svg{
+   /* width: 50pc; */
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(80pc);
+    }   
+    100%{
+        transform: translateX(-100vw);
+
+    } 
+}

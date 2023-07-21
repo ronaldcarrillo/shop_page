@@ -1,0 +1,101 @@
+/*Palabras*/
+.contenido{
+    display: block;
+    text-align: center;
+}
+/* .contenido h2{
+    line-height: 1.3;
+    padding: 150px 150px 0 150px;
+} */
+.contenido div{
+    padding: 150px 150px 0 150px;
+}
+.contenido span{
+    font-size: 2.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.contenido h2{
+    transition: opacity .3s;
+}
+.contenido h2:hover{
+    opacity: 0.5;
+}
+.contenido img{
+    margin: 0 5px 0 5px;
+}
+/* .contenido h2 .opacidad:hover span{
+    opacity: .5;
+} */
+
+
+/*Tarjetas*/
+.block__grid{
+    margin-left: 3pc;
+    margin-right: 3pc;
+    margin-bottom: 12pc;
+}
+.block__space{
+    width: 100%;
+    margin-bottom: 110px;
+    margin-top: 100px;
+}
+.grid{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(11, 25pc);
+    column-gap: 25px;
+    row-gap: 150px;
+}
+
+.producto:nth-child(7){
+    grid-area: 2/3/4/5;
+}
+
+.grid__img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 5px solid transparent;
+    border-radius: 40px;
+}
+.grid__img img{
+    position: absolute;
+    object-fit: cover;/*específica como el contenido de algún 
+    elemento (como una imagen) debe ser mostrado, cuando la anchura y altura de este elemento 
+    varía con respecto a su contenedor. Similar al background-size: cover, pero 
+    object-fit: cover; actua sobre la imagen y no sobre el fondo.*/
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+}
+.camisa{
+    transition: all 0.2s ease-in-out;
+}
+.grid__img:hover .camisa{
+    opacity: 0;
+}
+
+/*Texto de las tarjetas*/
+
+.informacion{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    font-size: 1.275rem;
+    margin-top: 15px;
+}
+.informacion span{
+    font-size: 1.375rem;
+}
+.informacion .nuevo{
+    font-weight: 400;
+    color: #0fa958;
+    margin-bottom: 4px;
+
+}
+.informacion div{
+    font-weight: 700;
+}
+

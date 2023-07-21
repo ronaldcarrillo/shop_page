@@ -1,0 +1,31 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+}
+.slid{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-bottom: 5px solid black;
+    padding-top: 20px;
+    overflow-x: scroll;
+}
+.imgSvg{
+    width: 35pc;
+    padding-left: 20px;
+}
+.imgSvg3{
+    width: 70pc;
+}
+.slid::-webkit-scrollbar{
+    /* display: none; */
+    height: 40px;
+}
+
+.about{
+    width: 171px;
+    height: 171px;
+    position: absolute;
+    bottom: -180px;
+    right: calc(100vh - 550px);
+}
